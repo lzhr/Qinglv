@@ -1,4 +1,4 @@
-package io.github.lzhr.qinglv.io.github.lzhr.qinglv.bean;
+package io.github.lzhr.qinglv.bean;
 
 import com.orm.SugarRecord;
 
