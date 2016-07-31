@@ -2,20 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="io.github.lzhr.qinglv"
           android:versionCode="1"
-          android:versionName="1.0">
+          android:versionName="1.0"
+          >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".App">
         <meta-data
             android:name="DATABASE"
-            android:value="qinglv.db"/>
+            android:value="qinglv1.db"/>
         <meta-data
             android:name="VERSION"
-            android:value="1"/>
+            android:value="12"/>
         <meta-data
             android:name="QUERY_LOG"
             android:value="true"/>

@@ -1,40 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="io.github.lzhr.qinglv.activities.MainActivity">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+    >
+    <!-- 如果在Java source code中对此widget有由代码，需提供id，andriod:id="@+id/<name>",在R.java上有对应的代码，对应为R.id.<name>, 在这个例子中我们在R.java中查到：R.id.myTextView=0x7f040000,我们可以通过name，在程序中对应这个空间。-->
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"/>
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main"/>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email"/>
-
-    <Button android:text="my button"
+        />
+    <!-- 增加一个新的控件button，Button：是widget的名字，如果我们定义我们自己的widget（是andriod.view.View的子类），我们需要给出完整的包路径，例如com.wei.andriod.MyWidget)。-->
+    <Button android:text="@string/my_button"
             android:id="@+id/my_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-</android.support.design.widget.CoordinatorLayout>
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"/>
+</LinearLayout>

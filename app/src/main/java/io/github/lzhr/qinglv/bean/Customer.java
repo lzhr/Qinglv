@@ -14,7 +14,8 @@ public class Customer extends SugarRecord implements Serializable{
     String sex;
     int tel;
     int station;
-    //int cid;
+
+   // public List<Record> records ;
 
     public Customer(){}
 
@@ -26,7 +27,7 @@ public class Customer extends SugarRecord implements Serializable{
         this.station=station;
     }
 
-    public String getCId() {
+    public String getCid() {
         return cid;
     }
 
@@ -65,4 +66,11 @@ public class Customer extends SugarRecord implements Serializable{
     public void setStation(int station) {
         this.station = station;
     }
+
+   // public List<Record> getRecords() {
+   //     return records;
+   // }
+
+
+
 }
